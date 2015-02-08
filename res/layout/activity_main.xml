@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a6ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" >
+
+        <ImageView
+            android:id="@+id/btn_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_folder"
+            android:clickable="true"/>
+        <ImageView
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="56dp"
+            android:layout_toLeftOf="@id/btn_folder"
+            android:layout_alignBottom="@id/btn_folder"
+            android:src="@drawable/icon_camera"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="画廊 "
+            android:textSize="22sp" 
+            android:textStyle="italic"/>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:padding="5dp"
+        android:scrollbarStyle="outsideInset" >
+        <LinearLayout 
+            android:id="@+id/picasa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
